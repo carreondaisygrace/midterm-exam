@@ -70,3 +70,85 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 =======
 # midterm-exam
 >>>>>>> 2f3dae5468183f47ef1e36506ebd77f4a510baf0
+# **Project Title: Sales-System**
+
+## **Description / Overview**
+The **Sales-System** is designed to manage and record product sales efficiently. It allows users to add, edit, and delete products, monitor stock levels, and process sales transactions. When a sale is recorded, the system automatically deducts the sold quantity from the product’s stock, ensuring accurate and real-time inventory management. This system helps automate manual sales recording and provides an organized view of sales and inventory data.
+
+---
+
+## **Objectives**
+- To design a simple and user-friendly sales management system.  
+- To automate the recording and computation of sales transactions.  
+- To maintain accurate and up-to-date product inventory.  
+- To automatically update stock quantities after each sale.  
+- To enhance efficiency and accuracy in managing business transactions.  
+
+---
+
+## **Features / Functionality**
+- **Add Product** – Allows the user to input new product details such as name, price, and stock quantity.  
+- **Edit Product** – Enables modification of product information.  
+- **Delete Product** – Removes a product from the list.  
+- **View Products** – Displays a table of all available products with their price and stock.  
+- **Add Sale** – Records new sales transactions, including date, product, price, and quantity.  
+- **Automatic Calculation** – Computes subtotal and total amounts for each sale.  
+- **Inventory Update** – Automatically deducts sold quantities from product stock after each sale.  
+- **View, Edit, and Delete Sales** – Provides control over recorded sales transactions.  
+
+---
+
+## **Installation Instructions**
+To install the **Sales-System**, follow these steps:
+
+1. **Download or Clone** this project from your repository.  
+2. **Install Required Software:**  
+   - Install **Composer**.  
+   - Install a web server such as **XAMPP** or **WAMP**.  
+3. **Set Up the Laravel Project:**  
+   - Run `composer install` in your project directory.  
+   - Copy `.env.example` and rename it to `.env`.  
+   - Update your database credentials in the `.env` file.  
+4. **Set Up the Database:**  
+   - Open **phpMyAdmin**.  
+   - Create a database (e.g., `sales_db`).  
+   - Run `php artisan migrate` to create tables.  
+   - Optionally, run `php artisan db:seed` to insert sample data.  
+5. **Run the Project:**  
+   - Run `php artisan key:generate`.  
+   - Start the Laravel server with `php artisan serve`.  
+   - Open your browser and go to [http://127.0.0.1:8000](http://127.0.0.1:8000).  
+
+---
+
+## **Usage**
+- Go to the **Products** page.  
+- Click **+ Add Product** to add new items with price and stock quantity.  
+- View, Edit, or Delete products as needed.  
+- Go to the **Sales** page.  
+- Click **+ New Sale** to record a transaction.  
+- The system will automatically calculate the subtotal and total amount and update (deduct) the product stock based on the quantity sold.  
+
+---
+
+## **Screenshots**
+
+### **Products Page**
+![Products Page](Screenshot%202025-10-27%20143122.png)  
+*Displays the list of products with their name, price, and stock quantity.*
+
+### **Sales Page**
+![Sales Page](Screenshot%202025-10-27%20143130.png)  
+*Allows users to record new sales transactions. The system automatically calculates totals and updates stock.*
+
+---
+
+## **Contributors**
+- **Daisy Grace Carreon** *(Developer)*  
+- **Clarisahaina Gonting** *(Partner)*  
+
+---
+
+## **License**
+This project is licensed for **educational purposes only**.  
+You may modify, distribute, and use it for learning and development purposes, but it is **not intended for commercial use**.
